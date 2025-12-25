@@ -15,6 +15,16 @@ public class PageObjectManager {
 		return registerpage;
 	}
 	
+	public LoginPage getLoginPage() {
+		LoginPage loginpage = new LoginPage(driver);
+		return loginpage;
+	}
+	
+	public PasswordRecoveryPage getPassRecoveryPage() {
+		PasswordRecoveryPage passrecoverpage = new PasswordRecoveryPage(driver);
+		return passrecoverpage;
+	}
+	
 	
 	
 

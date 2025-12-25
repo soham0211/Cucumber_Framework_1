@@ -1,4 +1,4 @@
-Feature: Registration
+Feature: Login,Registration and PasswordRecovery 
 
 Scenario Outline:
 Given user is on Ecommerce register page
@@ -12,3 +12,14 @@ Examples:
 | FirstName | LastName | Email        | Password | CnfPassword |
 | Harshit   | Pande    | hp@gmail.com | HP@123   | HP@123      |
 | Rutvik    | Patil    | rp@gmail.com | RP@123   | RP@123      |
+
+@Login
+Scenario:
+Given user is on Ecommerce main page
+When user go to login
+And enter Invalid email as <Email> and password as <Password> and click on login
+Then user should able login succusesfully 
+
+Examples:
+| Email        | Password |
+| so@gmail.com | So@1234  |

@@ -11,6 +11,8 @@ public class TestContextSetup {
 	public testBase testbase;
 	public WebDriver driver;
 	public PageObjectManager pageobjectmanager;
+	public String ExpectedLoginError = "Login was unsuccessful. Please correct the errors and try again.\r\n"
+			+ "No customer account found";
 
 	public TestContextSetup() throws IOException, InterruptedException {
 		
