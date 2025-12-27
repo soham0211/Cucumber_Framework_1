@@ -14,7 +14,7 @@ Examples:
 | Rutvik    | Patil    | rp@gmail.com | RP@123   | RP@123      |
 
 @Login
-Scenario:
+Scenario: Login,Registration and PasswordRecovery
 Given user is on Ecommerce main page
 When user go to login
 And enter Invalid email as <Email> and password as <Password> and click on login
