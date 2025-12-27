@@ -27,7 +27,7 @@ public class testBase {
 	if(NewBrowser.equalsIgnoreCase("chrome")) {
 		driver = new ChromeDriver();
 	}
-	else if (NewBrowser.equalsIgnoreCase("chrome")) {
+	else if (NewBrowser.equalsIgnoreCase("edge")) {
 		driver = new EdgeDriver();
 	}
 	
