@@ -30,6 +30,7 @@ public class testBase {
 	else if (NewBrowser.equalsIgnoreCase("chrome")) {
 		driver = new EdgeDriver();
 	}
+	
 	driver.get(UrlName);
 	Thread.sleep(2000);
 	
